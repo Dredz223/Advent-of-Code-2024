@@ -45,17 +45,21 @@ func main() {
 	//finding the distance between our pairs using vertex
 	// a.X = list1[0]
 	// a.Y = list2[0]
+	// b.X = list1[1]
+	// b.Y = list2[1]
+	// c.X = list1[2]
+	// c.Y = list2[2]
+	// d.X = list1[3]
+	// d.Y = list2[3]
+	// e.X = list1[4]
+	// e.Y = list2[4]
+	// f.X = list1[5]
+	// f.Y = list2[5]
 	a.X, a.Y = list1[0], list2[0]
-	b.X = list1[1]
-	b.Y = list2[1]
-	c.X = list1[2]
-	c.Y = list2[2]
-	d.X = list1[3]
-	d.Y = list2[3]
-	e.X = list1[4]
-	e.Y = list2[4]
-	f.X = list1[5]
-	f.Y = list2[5]
-	fmt.Println(a.X)
-	fmt.Println(a.Y)
+	b.X, b.Y = list1[1], list2[1]
+	c.X, c.Y = list1[2], list2[2]
+	d.X, d.Y = list1[3], list2[3]
+	e.X, e.Y = list1[4], list2[4]
+	f.X, f.Y = list1[5], list2[5]
+	fmt.Printf("(%v, %v) \n", a.X, a.Y)
 }
