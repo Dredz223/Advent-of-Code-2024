@@ -42,7 +42,6 @@ func main() {
 	// fmt.Println(e)
 	// fmt.Println(f)
 	fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n", a, b, c, d, e, f)
-	//finding the distance between our pairs using vertex
 	// a.X = list1[0]
 	// a.Y = list2[0]
 	// b.X = list1[1]
@@ -61,5 +60,38 @@ func main() {
 	d.X, d.Y = list1[3], list2[3]
 	e.X, e.Y = list1[4], list2[4]
 	f.X, f.Y = list1[5], list2[5]
+	fmt.Printf("Filled \n")
 	fmt.Printf("(%v, %v) \n", a.X, a.Y)
+	fmt.Printf("(%v, %v) \n", b.X, b.Y)
+	fmt.Printf("(%v, %v) \n", c.X, c.Y)
+	fmt.Printf("(%v, %v) \n", d.X, d.Y)
+	fmt.Printf("(%v, %v) \n", e.X, e.Y)
+	fmt.Printf("(%v, %v) \n", f.X, f.Y)
+	//finding the distance between our pairs using vertex
+	dista := a.X - a.Y
+	distb := b.X - b.Y
+	distc := c.X - c.Y
+	distd := d.X - d.Y
+	diste := e.X - e.Y
+	distf := f.X - f.Y
+	if dista < 0 {
+		dista = dista * (-1)
+	}
+	if distb < 0 {
+		distb = distb * (-1)
+	}
+	if distc < 0 {
+		distc = distc * (-1)
+	}
+	if distd < 0 {
+		distd = distd * (-1)
+	}
+	if diste < 0 {
+		diste = diste * (-1)
+	}
+	if distf < 0 {
+		distf = distf * (-1)
+	}
+	fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n", dista, distb, distc, distd, diste, distf)
+	totaldist := 0
 }
