@@ -74,24 +74,38 @@ func main() {
 	distd := d.X - d.Y
 	diste := e.X - e.Y
 	distf := f.X - f.Y
-	if dista < 0 {
-		dista = dista * (-1)
-	}
-	if distb < 0 {
-		distb = distb * (-1)
-	}
-	if distc < 0 {
-		distc = distc * (-1)
-	}
-	if distd < 0 {
-		distd = distd * (-1)
-	}
-	if diste < 0 {
-		diste = diste * (-1)
-	}
-	if distf < 0 {
-		distf = distf * (-1)
-	}
+	// if dista < 0 {
+	// 	dista = dista * (-1)
+	// }
+	// if distb < 0 {
+	// 	distb = distb * (-1)
+	// }
+	// if distc < 0 {
+	// 	distc = distc * (-1)
+	// }
+	// if distd < 0 {
+	// 	distd = distd * (-1)
+	// }
+	// if diste < 0 {
+	// 	diste = diste * (-1)
+	// }
+	// if distf < 0 {
+	// 	distf = distf * (-1)
+	// }
+	dista = setPositive(dista)
+	distb = setPositive(distb)
+	distc = setPositive(distc)
+	distd = setPositive(distd)
+	diste = setPositive(diste)
+	distf = setPositive(distf)
 	fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n", dista, distb, distc, distd, diste, distf)
-	totaldist := 0
+	totalDist := dista + distb + distc + distd + diste + distf
+	fmt.Printf("Total distance is %v!", totalDist)
+}
+
+func setPositive(dist int) int {
+	if dist < 0 {
+		dist = dist * (-1)
+	}
+	return dist
 }
