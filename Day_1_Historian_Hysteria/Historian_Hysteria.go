@@ -1,3 +1,10 @@
+/**
+Andres Guerrero Maldonado
+Advent of Code Day 1
+Commented out code is code that I had an initial take on until
+it was later revised/optimized.
+**/
+
 package main
 
 import (
@@ -41,7 +48,7 @@ func main() {
 	// fmt.Println(d)
 	// fmt.Println(e)
 	// fmt.Println(f)
-	fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n", a, b, c, d, e, f)
+	//fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n", a, b, c, d, e, f) unneeded print
 	// a.X = list1[0]
 	// a.Y = list2[0]
 	// b.X = list1[1]
@@ -61,12 +68,13 @@ func main() {
 	e.X, e.Y = list1[4], list2[4]
 	f.X, f.Y = list1[5], list2[5]
 	fmt.Printf("Filled \n")
-	fmt.Printf("(%v, %v) \n", a.X, a.Y)
-	fmt.Printf("(%v, %v) \n", b.X, b.Y)
-	fmt.Printf("(%v, %v) \n", c.X, c.Y)
-	fmt.Printf("(%v, %v) \n", d.X, d.Y)
-	fmt.Printf("(%v, %v) \n", e.X, e.Y)
-	fmt.Printf("(%v, %v) \n", f.X, f.Y)
+	fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n", a, b, c, d, e, f)
+	// fmt.Printf("(%v, %v) \n", a.X, a.Y)
+	// fmt.Printf("(%v, %v) \n", b.X, b.Y)
+	// fmt.Printf("(%v, %v) \n", c.X, c.Y)
+	// fmt.Printf("(%v, %v) \n", d.X, d.Y)
+	// fmt.Printf("(%v, %v) \n", e.X, e.Y)
+	// fmt.Printf("(%v, %v) \n", f.X, f.Y)
 	//finding the distance between our pairs using vertex
 	dista := a.X - a.Y
 	distb := b.X - b.Y
