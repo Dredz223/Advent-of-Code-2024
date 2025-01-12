@@ -1,23 +1,14 @@
-/**
-Andres Guerrero Maldonado
-Advent of Code Day 1
-Commented out code is code that I had an initial take on until
-it was later revised/optimized.
-**/
-
 package main
 
 import (
 	"bufio"
 	"fmt"
 	"os"
-	"sort"
 	"strconv"
 	"strings"
 )
 
 func main() {
-	//Puzzle input from .txt file
 	var left []int
 	var right []int
 	file, ferr := os.Open("input.txt")
@@ -42,11 +33,9 @@ func main() {
 		right = append(right, rightInt)
 	}
 
-	//Reorganize both arrays into a ascending order then compare
-	sort.Ints(left)
-	sort.Ints(right)
+	fmt.Printf("Array 1 %v\n", left)
+	fmt.Printf("Array 2 %v\n", right)
 
-	//Finding distance between each point
 	var dist int
 	for range left {
 		leftNum := left[0]
@@ -61,8 +50,8 @@ func main() {
 			d *= -1
 		}
 
+		fmt.Printf("Summation: %v ", d)
 		dist += d
+		fmt.Printf("Distance: %v\n", dist)
 	}
-
-	fmt.Printf("Distance: %v\n", dist)
 }
