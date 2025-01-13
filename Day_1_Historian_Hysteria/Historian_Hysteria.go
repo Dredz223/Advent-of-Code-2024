@@ -41,7 +41,7 @@ func main() {
 		left = append(left, leftInt)
 		right = append(right, rightInt)
 	}
-
+	fmt.Println(left)
 	//Reorganize both arrays into a ascending order then compare
 	sort.Ints(left)
 	sort.Ints(right)
